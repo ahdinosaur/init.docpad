@@ -12,27 +12,26 @@
     "url": "https://github.com/{{ user }}/{{ project }}/issues"
   },
   "homepage": "http://{{ user }}.github.io/{{ project }}",
-  "dependencies": {
-    "docpad": "~6.63.7",
-    "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.5",
-    "font-awesome": "git+https://github.com/FortAwesome/Font-Awesome#v4.0.3",
-    "longjohn": "~0.2.2",
-    "docpad-plugin-browserifybundles": "~2.0.0",
-    "uglifyify": "~1.2.2",
-    "docpad-plugin-livereload": "~2.6.0",
-    "docpad-plugin-ejs": "git://github.com/perpetual-motion/docpad-plugin-ejs"
-  },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
     "start": "node .",
     "develop": "docpad run",
     "deploy": "git remote add origin git@github.com:{{ user }}/{{ project }}.git; docpad deploy-ghpages --env static"
   },
+  "dependencies": {
+    "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.15.5",
+    "font-awesome": "^4.0.3",
+    "longjohn": "^0.2.2",
+    "uglifyify": "^1.2.3",
+    "docpad": "^6.64.0",
+    "docpad-plugin-browserifybundles": "^2.0.0",
+    "docpad-plugin-partials": "^2.9.0",
+    "docpad-plugin-handlebars": "^2.3.0",
+    "docpad-plugin-less": "^2.4.1",
+    "docpad-plugin-raw": "^2.3.2"
+  },
   "devDependencies": {
-    "docpad-plugin-partials": "~2.8.1",
-    "docpad-plugin-handlebars": "~2.3.0",
-    "docpad-plugin-less": "~2.4.1",
-    "docpad-plugin-raw": "~2.3.2",
+    "docpad-plugin-livereload": "^2.6.0",
     "docpad-plugin-ghpages": "~2.4.3"
   }
 }
