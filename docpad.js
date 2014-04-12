@@ -5,7 +5,7 @@ require('longjohn');
 module.exports = {
   templateData: {
     site: {
-      title: "{{ projectName }} is",
+      title: "{{ project }} is",
       description: "a really awesome idea!",
     },
   },

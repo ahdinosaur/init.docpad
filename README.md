@@ -1,13 +1,13 @@
 # {{ project }}
 
-website for [{{ project }}](http://{{ name }}.github.io/{{ project }}) built using [DocPad](http://docpad.org).
+website for [{{ project }}](http://{{ user }}.github.io/{{ project }}) built using [DocPad](http://docpad.org).
 
 ## how to
 
 ### install
 
 ```
-git clone https://github.com/{{ name }}/{{ project }}
+git clone https://github.com/{{ user }}/{{ project }}
 npm install
 ```
 

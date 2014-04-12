@@ -1,17 +1,17 @@
 {
-  "name": "{{ project }}",
+  "user": "{{ project }}",
   "version": "0.1.0",
   "description": "{{ project }} website",
   "repository": {
     "type": "git",
-    "url": "git://github.com/{{ name }}/{{ project }}.git"
+    "url": "git://github.com/{{ user }}/{{ project }}.git"
   },
-  "author": "{{ name }}",
+  "author": "{{ user }}",
   "license": "AGPLv3",
   "bugs": {
-    "url": "https://github.com/{{ name }}/{{ project }}/issues"
+    "url": "https://github.com/{{ user }}/{{ project }}/issues"
   },
-  "homepage": "http://{{ name }}.github.io/{{ project }}",
+  "homepage": "http://{{ user }}.github.io/{{ project }}",
   "dependencies": {
     "docpad": "~6.63.7",
     "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.5",
