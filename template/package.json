@@ -1,0 +1,38 @@
+{
+  "user": "__project__",
+  "version": "0.1.0",
+  "description": "__description__",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/__user__/__project__.git"
+  },
+  "author": "__user__",
+  "license": "__license__",
+  "bugs": {
+    "url": "https://github.com/__user__/__project__/issues"
+  },
+  "homepage": "http://__user__.github.io/__project__",
+  "main": "node_modules/.bin/docpad-server",
+  "scripts": {
+    "start": "node .",
+    "develop": "docpad run",
+    "deploy": "git remote add origin git@github.com:__user__/__project__.git; docpad deploy-ghpages --env static"
+  },
+  "dependencies": {
+    "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.15.5",
+    "font-awesome": "^4.0.3",
+    "longjohn": "^0.2.2",
+    "uglifyify": "^1.2.3",
+    "docpad": "^6.64.0",
+    "docpad-plugin-browserifybundles": "^2.0.0",
+    "docpad-plugin-partials": "^2.9.0",
+    "docpad-plugin-handlebars": "^2.3.0",
+    "docpad-plugin-less": "^2.4.1",
+    "docpad-plugin-raw": "^2.3.2",
+    "docpad-plugin-eco": "^2.0.3"
+  },
+  "devDependencies": {
+    "docpad-plugin-livereload": "^2.6.0",
+    "docpad-plugin-ghpages": "~2.4.3"
+  }
+}

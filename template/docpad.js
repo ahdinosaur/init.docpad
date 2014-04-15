@@ -5,8 +5,10 @@ require('longjohn');
 module.exports = {
   templateData: {
     site: {
-      title: "{{ project }} is",
-      description: "a really awesome idea!",
+      title: "__project__",
+      description: "__description__",
+      styles: ["/styles/index.css"],
+      scripts: ["/scripts/bundle.js"],
     },
   },
   detectEncoding: true,
@@ -23,7 +25,7 @@ module.exports = {
     },
     browserifybundles: {
       bundles: [{
-        arguments: ['-t', 'uglifyify'],
+        arguments: ['-g', 'uglifyify'],
         entry: 'scripts/index.js',
         out: 'scripts/bundle.js',
       }],

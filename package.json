@@ -1,37 +1,26 @@
 {
-  "user": "{{ project }}",
+  "name": "kindling-docpad",
   "version": "0.1.0",
-  "description": "{{ project }} website",
+  "description": "a kindling generator for docpad",
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git://github.com/{{ user }}/{{ project }}.git"
+    "url": "git://github.com/ahdinosaur/kindling-docpad.git"
   },
-  "author": "{{ user }}",
-  "license": "AGPLv3",
+  "keywords": [
+    "kindling",
+    "template",
+    "scaffold",
+    "scaffolding",
+    "bootstrap",
+    "starter",
+    "generate",
+    "generator"
+  ],
+  "author": "ahdinosaur",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/{{ user }}/{{ project }}/issues"
+    "url": "https://github.com/ahdinosaur/kindling-docpad/issues"
   },
-  "homepage": "http://{{ user }}.github.io/{{ project }}",
-  "main": "node_modules/.bin/docpad-server",
-  "scripts": {
-    "start": "node .",
-    "develop": "docpad run",
-    "deploy": "git remote add origin git@github.com:{{ user }}/{{ project }}.git; docpad deploy-ghpages --env static"
-  },
-  "dependencies": {
-    "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.15.5",
-    "font-awesome": "^4.0.3",
-    "longjohn": "^0.2.2",
-    "uglifyify": "^1.2.3",
-    "docpad": "^6.64.0",
-    "docpad-plugin-browserifybundles": "^2.0.0",
-    "docpad-plugin-partials": "^2.9.0",
-    "docpad-plugin-handlebars": "^2.3.0",
-    "docpad-plugin-less": "^2.4.1",
-    "docpad-plugin-raw": "^2.3.2"
-  },
-  "devDependencies": {
-    "docpad-plugin-livereload": "^2.6.0",
-    "docpad-plugin-ghpages": "~2.4.3"
-  }
+  "homepage": "https://github.com/ahdinosaur/kindling-docpad"
 }

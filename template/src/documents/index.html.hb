@@ -1,11 +1,9 @@
 ---
 layout: "default"
 ---
-<main>
+<main class="ui page grid">
   <header>
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
   </header>
-
-  <section>
 </main>

@@ -1,9 +1,7 @@
 @import '../../../node_modules/font-awesome/less/font-awesome.less';
 @fa-font-path:  "../fonts";
 
-@import '../../../node_modules/semantic/src/elements/icon.less';
-
-@import './colors.less';
+@import '../../../node_modules/semantic/src/collections/grid.less';
 
 @tiny: ~"only screen and (max-width: 768px)";
 @small: ~"only screen and (min-width: 768px) and (max-width: 991px)";
@@ -15,7 +13,6 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: FontAwesome;
-  color: @black;
 }
 
 body > main > header {
@@ -63,16 +60,3 @@ body > main > header {
     text-decoration: none;
   }
 }
-
-a {
-  text-decoration:    none;
-  transition: color .3s ease-in-out;
-  -webkit-transition: color .3s ease-in-out;
-  -moz-transition: color .3s ease-in-out;
-  -ms-transition: color .3s ease-in-out;
-  -o-transition: color .3s ease-in-out;
-}
-a:link    { color: @blue;   }
-a:visited { color: @purple; }
-a:hover   { color: @aqua;   }
-a:active  { color: @orange; }
